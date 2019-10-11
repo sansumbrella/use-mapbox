@@ -1,0 +1,11 @@
+{
+  "name": "use-mapbox",
+  "version": "0.0.1",
+  "description": "React hook for using a mapbox-gl map",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "David Wicks",
+  "license": "MIT"
+}
