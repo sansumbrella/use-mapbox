@@ -2,7 +2,7 @@
   "compilerOptions": {
     "module": "commonjs",
     "noImplicitAny": true,
-    "removeComments": false,
+    "removeComments": true,
     "sourceMap": true,
     "outDir": "./lib",
     "strict": true,

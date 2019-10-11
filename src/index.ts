@@ -12,24 +12,21 @@ export function useMapbox(
   const [mapInstance, setMapInstance] = useState<mapboxgl.Map>();
   useEffect(function initializeMap() {
     const container = ref.current;
-    if (!container) {
+    if (mapInstance || !container) {
       return;
     }
-    if (mapInstance) {
-      return;
-    }
+
     mapboxgl.accessToken = accessToken;
     const mergedOptions = {container, ...defaultOptions, ...options};
     const map = new mapboxgl.Map(mergedOptions);
     setMapInstance(map);
   }, [ref, accessToken, options]);
 
-
   return mapInstance;
 }
 
 const defaultOptions: Partial<mapboxgl.MapboxOptions> = {
+  center: [-77.0305, 38.8868],
   style: 'mapbox://styles/mapbox/streets-v11',
-  center: [-74.50, 40],
   zoom: 9
 };
