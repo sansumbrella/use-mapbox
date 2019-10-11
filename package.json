@@ -4,11 +4,20 @@
   "description": "React hook for using a mapbox-gl map",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "tsc"
   },
   "author": "David Wicks",
   "license": "MIT",
-  "dependencies": {
+  "peerDependencies": {
+    "mapbox-gl": "1.4.x",
+    "react": "16.10.x"
+  },
+  "devDependencies": {
+    "@types/mapbox-gl": "^0.54.4",
+    "@types/react": "^16.9.5",
+    "mapbox-gl": "^1.4.1",
+    "react": "^16.10.2",
     "typescript": "^3.6.4"
   }
 }
