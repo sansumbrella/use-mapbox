@@ -1,9 +1,17 @@
 # use-mapbox
 
+Minimal React hook for displaying a Mapbox map. Adds the required CSS and sets a default style.
+
 ## Install
 
+Install the useMapbox hook:
 ```sh
 npm install --save use-mapbox
+```
+
+Also be sure to install peer dependencies so it can use mapbox-gl:
+```sh
+npm install --save mapbox-gl
 ```
 
 ## Usage
