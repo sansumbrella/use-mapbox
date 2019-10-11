@@ -1,6 +1,6 @@
 # use-mapbox
 
-Minimal React hook for displaying a Mapbox map. Adds the required CSS and sets a default style.
+Minimal React hook for displaying a Mapbox map.
 
 ## Install
 
@@ -18,10 +18,16 @@ npm install --save mapbox-gl
 
 Get an [access token](https://account.mapbox.com/access-tokens/) from your Mapbox account.
 
+Call `useMapbox` with a ref to a DOM element that will hold your map and your Mapbox access token. Pass any constructor options for your map—like style, center, and zoom—in the optional third parameter of `useMapbox`. `useMapbox` returns the mapbox-gl instance, which can be used in further `useEffect` calls to do things like add layers and event handlers.
+
 ```js
+import React, { useRef } from "react";
 import { useMapbox } from "use-mapbox";
-…
+
 function YourComponent() {
-    const map = useMapbox(ref, accessToken, {style: "mapbox://styles/mapbox/streets-v11"});
+    const ref = useRef();
+    const map = useMapbox(ref, accessToken);
+
+    return <div ref={ref}/>;
 }
 ```
