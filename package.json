@@ -4,6 +4,8 @@
   "description": "React hook for using a mapbox-gl map",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
+  "homepage": "https://github.com/sansumbrella/use-mapbox#readme",
+  "repository": { "url": "https://github.com/sansumbrella/use-mapbox.git", "type": "git" },
   "scripts": {
     "test": "jest",
     "build": "tsc"
