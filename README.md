@@ -29,9 +29,12 @@ function YourComponent() {
     const ref = useRef();
     useMapbox(ref, accessToken);
 
-    return <div ref={ref}/>;
+    return <div ref={ref} style={{ width: "640px", height: "480px" }}/>;
 }
 ```
+
+Note that you will need to style your div to give it a height. Mapbox maps get their size from their parent element, and by default divs get their height from their child content.
+
 ### Customizing and interacting with the map
 Pass any constructor options for your map—like style, center, and zoom—in the optional third parameter of `useMapbox`. These options are used to configure the map when it is first constructed.
 
