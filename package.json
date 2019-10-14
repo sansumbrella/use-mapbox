@@ -16,8 +16,8 @@
   "author": "David Wicks",
   "license": "MIT",
   "peerDependencies": {
-    "mapbox-gl": "1.4.x",
-    "react": "16.10.x"
+    "mapbox-gl": "^1.2",
+    "react": "^16.8"
   },
   "devDependencies": {
     "@types/mapbox-gl": "^0.54.4",
@@ -26,5 +26,10 @@
     "react": "^16.10.2",
     "typescript": "^3.6.4"
   },
-  "keywords": ["react", "hook", "mapbox", "mapbox-gl"]
+  "keywords": [
+    "react",
+    "hook",
+    "mapbox",
+    "mapbox-gl"
+  ]
 }
