@@ -8,7 +8,7 @@ type AccessToken = string;
 /// Instantiate a Mapbox map inside the referenced element.
 export function useMapbox(
     ref: React.RefObject<HTMLDivElement>, accessToken: AccessToken,
-    options?: mapboxgl.MapboxOptions): mapboxgl.Map|undefined {
+    options?: Partial<mapboxgl.MapboxOptions>): mapboxgl.Map|undefined {
   const [mapInstance, setMapInstance] = useState<mapboxgl.Map>();
   useEffect(function initializeMap() {
     const container = ref.current;
