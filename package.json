@@ -14,7 +14,7 @@
     "build": "tsc"
   },
   "author": "David Wicks",
-  "license": "MIT",
+  "license": "BSD-3-Clause",
   "peerDependencies": {
     "mapbox-gl": "^1.2",
     "react": "^16.8"
